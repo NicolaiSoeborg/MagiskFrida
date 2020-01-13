@@ -92,7 +92,7 @@ def create_module(platform, frida_release):
     download_file(frida_download_url + frida_server, frida_server_path)
 
     # Extract frida-server to correct path.
-    extract_file(frida_server_path, os.path.join(module_dir, "system/xbin/frida-server"))
+    extract_file(frida_server_path, os.path.join(module_dir, "system/bin/frida-server"))
 
     # Create flashable zip.
     print("Building Magisk module.")
